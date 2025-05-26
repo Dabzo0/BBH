@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Fuentes de Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap" rel="stylesheet">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <a id="puntoInicio"></a>
+    <header>
+        <img src="Imagenes/logo.png" alt="Logo de la página" class="logo"></i>
+        <h2>[ B B H ] Better buy here !</h2>
+        <nav>
+            <ul>
+                <li>
+                    <i class="fa-solid fa-house fa-xl"></i>
+                    <!--<img src="Iconos/inicio.png" class="iconoMediano"></i>-->
+                    <a href="#puntoInicio">Inicio</a></li>
+                
+                <li>
+                    <i class="fa-solid fa-boxes-stacked fa-xl"></i>
+                    <!--<img src="Iconos/caja_abierta_llena.png" class="iconoMediano"></i>-->
+                    <a href="#secProductos">Productos</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope fa-xl"></i>
+                    <!--<img src="Iconos/sobre.png" class="iconoMediano"></i>-->
+                    <a href="#formContacto">Contacto</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-at fa-xl"></i>
+                    <!--<img src="Iconos/seguinos.png" class="iconoMediano"></i>-->
+                    <a href="#redes">Seguinos</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-location-dot fa-xl"></i>
+                    <!--<img src="Iconos/ubicacion.png" class="iconoMediano"></i>-->
+                    <a href="https://maps.app.goo.gl/eFNKRpr8c69nfNgt9" target="_blank">Visitanos</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-circle-user fa-2xl"></i>
+                    <!--<img src="Iconos/usuario.png" class="iconoMediano"></i>-->
+                    <a href="#">Iniciar sesión</a>
+                </li>
+            </ul>      
+        </nav>
+    </header>
+    
+    
+    <main>
+        
+        
+        <section id="secProductos">
+            <h2 class="tituloSeccion">Productos</h2>
+            <div class="areaProductos">
+                <div class ="cardProducto">
+                    <img src="Imagenes/carpeta.jpg" alt="Imagen de producto 1" class="imgProducto">
+                    <p class="precioProducto">$1.500,00</p>
+                    <h3 class="nombreProducto">Carpeta A4</h3>
+                </div>
+                <div class ="cardProducto">
+                    <img src="Imagenes/fibras.jpg" alt="Imagen de producto 1" class="imgProducto">
+                    <p class="precioProducto">$1.500,00</p>
+                    <h3 class="nombreProducto">Fibras de colores</h3>
+                </div>
+                <div class ="cardProducto">
+                    <img src="Imagenes/goma.jpg" alt="Imagen de producto 1" class="imgProducto">
+                    <p class="precioProducto">$1.500,00</p>
+                    <h3 class="nombreProducto">Goma</h3>
+                </div>
+                <div class ="cardProducto">
+                    <img src="Imagenes/hojas.jpg" alt="Imagen de producto 1" class="imgProducto">
+                    <p class="precioProducto">$1.500,00</p>
+                    <h3 class="nombreProducto">Hoja A4</h3>
+                </div>
+                <div class ="cardProducto">
+                    <img src="Imagenes/lapiceras.jpg" alt="Imagen de producto 1" class="imgProducto">
+                    <p class="precioProducto">$1.500,00</p>
+                    <h3 class="nombreProducto">Lapicera azul</h3>
+                </div>
+                <div class ="cardProducto">
+                    <img src="Imagenes/lapiceras_colores.jpg" alt="Imagen de producto 1" class="imgProducto">
+                    <p class="precioProducto">$1.500,00</p>
+                    <h3 class="nombreProducto">Lapicera color</h3>
+                </div>
+                <div class ="cardProducto">
+                    <img src="Imagenes/libretas.jpg" alt="Imagen de producto 1" class="imgProducto">
+                    <p class="precioProducto">$1.500,00</p>
+                    <h3 class="nombreProducto">Libreta</h3>
+                </div>
+                <div class ="cardProducto">
+                    <img src="Imagenes/marcadores.jpg" alt="Imagen de producto 1" class="imgProducto">
+                    <p class="precioProducto">$1.500,00</p>
+                    <h3 class="nombreProducto">Marcador</h3>
+                </div>
+                <div class ="cardProducto">
+                    <img src="Imagenes/papeles_colores.jpg" alt="Imagen de producto 1" class="imgProducto">
+                    <p class="precioProducto">$1.500,00</p>
+                    <h3 class="nombreProducto">Papel de color</h3>
+                </div>
+            </div>
+        </section>
+        
+        <section class="secContacto">
+            <div id="formContacto">
+                <div class="tituloContacto">
+                    <snap>¿Tenés dudas?</br>¿Querés hacer una consulta?</br>¡Completá los datos y contactanos!</snap>
+                </div>
+
+                <form action="https://formspree.io/f/xjkwzrgb" method="POST">
+                    <div class="divFormulario">
+                        <label for="monbre" class="lblFormulario">Tu nombre:</label>                 
+                        <input type="text" name="name" id="monbre" placeholder="Nombre y apellido" required>
+                    </div>
+
+                    <div class="divFormulario">
+                        <label for="email" class="lblFormulario">Tu mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="divFormulario">
+                        <label for="message" class="lblFormulario">Tu mensaje:</label>               
+                        <textarea name="message" placeholder="Mensaje" required></textarea>
+                    </div>
+                
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="secResenias">
+            <h2 class="tituloSeccion">Reseñas</h2>
+            <div class="areaResenias">
+                <div class="cardResenia">
+                    <div>
+                        <div class="estrellitas">
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                        </div>
+                    
+                        <div class="cuerpoResenia">                    
+                            <p class="fechaResenia">15/03/2025</p>
+                            <h3>John Connor</h3>                   
+                            <p class="txtResenia"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero accusamus qui maxime exercitationem aspernatur molestias eum modi, aperiam perspiciatis odit alias quod voluptate repellendus est quaerat. Vero ex repudiandae nulla!</p>
+                        </div>
+                    </div>
+
+                    <div class="imgResenia">
+                        <img src="Imagenes/persona-1.avif" alt="Persona" class="imgUsuario">
+                    </div>
+                </div>
+
+                <div class="cardResenia">
+                    <div>
+                        <div class="estrellitas">
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                        </div>
+                    
+                        <div class="cuerpoResenia">                    
+                            <p class="fechaResenia">15/03/2025</p>
+                            <h3>John Connor</h3>                   
+                            <p class="txtResenia"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero accusamus qui maxime exercitationem aspernatur molestias eum modi, aperiam perspiciatis odit alias quod voluptate repellendus est quaerat. Vero ex repudiandae nulla!</p>
+                        </div>
+                    </div>
+
+                    <div class="imgResenia">
+                        <img src="Imagenes/persona-2.avif" alt="Persona" class="imgUsuario">
+                    </div>
+                </div>
+
+                <div class="cardResenia">
+                    <div>
+                        <div class="estrellitas">
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                        </div>
+                    
+                        <div class="cuerpoResenia">                    
+                            <p class="fechaResenia">15/03/2025</p>
+                            <h3>John Connor</h3>                   
+                            <p class="txtResenia"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero accusamus qui maxime exercitationem aspernatur molestias eum modi, aperiam perspiciatis odit alias quod voluptate repellendus est quaerat. Vero ex repudiandae nulla!</p>
+                        </div>
+                    </div>
+
+                    <div class="imgResenia">
+                        <img src="Imagenes/persona-4.avif" alt="Persona" class="imgUsuario">
+                    </div>
+                </div>
+
+                <div class="cardResenia">
+                    <div>
+                        <div class="estrellitas">
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                        </div>
+                    
+                        <div class="cuerpoResenia">                    
+                            <p class="fechaResenia">15/03/2025</p>
+                            <h3>John Connor</h3>                   
+                            <p class="txtResenia"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero accusamus qui maxime exercitationem aspernatur molestias eum modi, aperiam perspiciatis odit alias quod voluptate repellendus est quaerat. Vero ex repudiandae nulla!</p>
+                        </div>
+                    </div>
+
+                    <div class="imgResenia">
+                        <img src="Imagenes/persona-5.avif" alt="Persona" class="imgUsuario">
+                    </div>
+                </div>
+
+                <div class="cardResenia">
+                    <div>
+                        <div class="estrellitas">
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                        </div>
+                    
+                        <div class="cuerpoResenia">                    
+                            <p class="fechaResenia">15/03/2025</p>
+                            <h3>John Connor</h3>                   
+                            <p class="txtResenia"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero accusamus qui maxime exercitationem aspernatur molestias eum modi, aperiam perspiciatis odit alias quod voluptate repellendus est quaerat. Vero ex repudiandae nulla!</p>
+                        </div>
+                    </div>
+
+                    <div class="imgResenia">
+                        <img src="Imagenes/persona-6.avif" alt="Persona" class="imgUsuario">
+                    </div>
+                </div>
+
+                <div class="cardResenia">
+                    <div>
+                        <div class="estrellitas">
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                        </div>
+                    
+                        <div class="cuerpoResenia">                    
+                            <p class="fechaResenia">15/03/2025</p>
+                            <h3>John Connor</h3>                   
+                            <p class="txtResenia"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero accusamus qui maxime exercitationem aspernatur molestias eum modi, aperiam perspiciatis odit alias quod voluptate repellendus est quaerat. Vero ex repudiandae nulla!</p>
+                        </div>
+                    </div>
+
+                    <div class="imgResenia">
+                        <img src="Imagenes/persona-7.avif" alt="Persona" class="imgUsuario">
+                    </div>
+                </div>
+
+                <div class="cardResenia">
+                    <div>
+                        <div class="estrellitas">
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                        </div>
+                    
+                        <div class="cuerpoResenia">                    
+                            <p class="fechaResenia">15/03/2025</p>
+                            <h3>John Connor</h3>                   
+                            <p class="txtResenia"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero accusamus qui maxime exercitationem aspernatur molestias eum modi, aperiam perspiciatis odit alias quod voluptate repellendus est quaerat. Vero ex repudiandae nulla!</p>
+                        </div>
+                    </div>
+
+                    <div class="imgResenia">
+                        <img src="Imagenes/persona-8.avif" alt="Persona" class="imgUsuario">
+                    </div>
+                </div>
+
+                <div class="cardResenia">
+                    <div>
+                        <div class="estrellitas">
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                        </div>
+                    
+                        <div class="cuerpoResenia">                    
+                            <p class="fechaResenia">15/03/2025</p>
+                            <h3>John Connor</h3>                   
+                            <p class="txtResenia"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero accusamus qui maxime exercitationem aspernatur molestias eum modi, aperiam perspiciatis odit alias quod voluptate repellendus est quaerat. Vero ex repudiandae nulla!</p>
+                        </div>
+                    </div>
+
+                    <div class="imgResenia">
+                        <img src="Imagenes/persona-3.avif" alt="Persona" class="imgUsuario">
+                    </div>
+                </div>
+
+                <div class="cardResenia">
+                    <div>
+                        <div class="estrellitas">
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                        </div>
+                    
+                        <div class="cuerpoResenia">                    
+                            <p class="fechaResenia">15/03/2025</p>
+                            <h3>John Connor</h3>                   
+                            <p class="txtResenia"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum placeat aliquam similique. Consequatur possimus, suscipit cumque dolor maiores est tempore consectetur sequi! Iure ab, iusto architecto eum reiciendis libero maxime!</p>
+                        </div>
+                    </div>
+
+                    <div class="imgResenia">
+                        <img src="Imagenes/persona-9.avif" alt="Persona" class="imgUsuario">
+                    </div>
+                </div>
+
+                <div class="cardResenia">
+                    <div>
+                        <div class="estrellitas">
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                            <i class="fa-solid fa-star fa-xl" style="color: #FFD43B;"></i>
+                        </div>
+                    
+                        <div class="cuerpoResenia">                    
+                            <p class="fechaResenia">15/03/2025</p>
+                            <h3>John Connor</h3>                   
+                            <p class="txtResenia"> Que buena está la página cheeee! XD</p>
+                        </div>
+                    </div>
+
+                    <div class="imgResenia">
+                        <img src="Imagenes/persona-10.avif" alt="Persona" class="imgUsuario">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="espacioPublicitario">
+            <h3>- PUBLICITE AQUÍ -</h3>
+            <video controls autoplay muted loop class="videoPublicidad">
+                <source src="videos/publicidad.mp4" type="video/mp4"href="https://www.youtube.com/shorts/lJfYlcoXkM8">
+                Tu navegador no soporta el video.
+            </video>
+            <h3>- PUBLICITE AQUÍ -</h3>
+        </section>
+
+        <nav class="navigationBar">
+            <ul id="navBar">
+                <li class="navItem">
+                    <i class="fa-solid fa-house fa-xl" style="color: #ffffff;"></i>
+                    <a href="#puntoInicio">Ini</a></i>
+                </li>
+                <li class="navItem">
+                    <i class="fa-solid fa-box fa-xl" style="color: #ffffff;"></i>
+                </li>
+                <li class="navItem"><i class="fa-solid fa-envelope fa-xl" style="color: #ffffff"></i></li>
+                <li class="navItem"><i class="fa-solid fa-comments-dollar fa-xl" style="color:#ffffff"></i></li>
+            </ul>
+        <nav>
+
+    </main>
+
+    <footer>
+        <div>
+
+            <div id="redes">
+                <h3>- Seguinos en nuestras redes -</h3>
+                <ul>
+                    <li>
+                        <img src="Iconos/instagram.png" class="iconoPequeño"></i>
+                        <a href="https://www.instagram.com/damian_b84/" target="_blank"> damian_b84 </a>
+                    </li>
+                    <li>
+                        <img src="Iconos/twitter.png" class="iconoPequeño"></i>
+                        <a href="https://x.com/megas84" añt="Link a x" target="_blank"> @megas84 </a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="visitanos">
+                <h3>¡¡ Visitanos aquí !! </h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3469.9531296166056!2d-58.3959053249402!3d-34.826078751430224!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd4a20c783d5f%3A0xe83da09a4154d38!2sPlaza%20General%20Manuel%20Belgrano!5e0!3m2!1ses!2sar!4v1747607873825!5m2!1ses!2sar" alt="Ubicación de la empresa"></iframe>
+            </div>
+
+        </div>
+        <p>© 2025 Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
