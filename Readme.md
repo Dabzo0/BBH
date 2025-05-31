@@ -30,4 +30,5 @@ Aunque aún no está terminado, se planea incluir las siguientes funcionalidades
 
 * HTML
 * CSS
+>>>>>>> e0da387c9d3be4ace15c2c473e82da25fdda3c81
 * Proximamente: JavaScript
