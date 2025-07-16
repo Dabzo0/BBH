@@ -11,6 +11,7 @@ Actualmente, este proyecto se encuentra **en construcción**. Muchas funcionalid
 Por el momento, la página web cuenta con la siguiente sección:
 
 * **Productos:** Aquí se muestran algunos de los productos que un futuro e-commerce podría ofrecer. Esta sección está diseñada para visualizar la presentación de artículos.
+* **Carrito:** Aquí se muestran los productos que un cliente del e-commerce podría commpraría. Esta sección está diseñada para visualizar la colección de artículos que se van comprar.
 * **Contacto:** Un espacio para que los usuarios puedan realizar consultas directamente al vendedor.
 * **Reseñas:** Sección donde los usuarios podrán ver y dejar sus opiniones sobre los productos.
 * **Publicidad:** Un espacio dedicado a mostrar anuncios.

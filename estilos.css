@@ -14,6 +14,7 @@ header{
     background-color: rgba(117, 202, 241, 0.952);
     border-bottom: 3px solid rgb(0, 60, 255);
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     padding-left: 1rem;
@@ -26,16 +27,21 @@ header{
     padding: 0px;
 }
 header h2{
-    flex-grow: 1;
     margin: 0px;
     padding: 0px;
     font-size: 2rem;
 }
-header nav{
-    height: 100%;
+.navHeader{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        margin: 0px;
+        padding: 0px;
+    /*height: 100%;
     display: flex;
     z-index: 100;
-    /*flex-wrap: wrap;
+    flex-wrap: wrap;
     align-items: end;*/
 }
 .iconoMediano {
@@ -82,17 +88,16 @@ main{
     align-items: center ;
 }
 
-.navigationBar{
+.navFlotante{
     /*border: 1px solid black;*/
     position: fixed;
-    top: 10rem;
-    right: 2px;
+    top: 190px;
+    left: 2px;
     width: 10%;
     max-width: 50px;
     margin: 0px;    
 }
 #navBar{
-    /*border: 1px solid black;*/
     margin: 0px;    
     border-radius: 10px;
     width: 100%;    
@@ -102,9 +107,17 @@ main{
     gap: 5px;
     overflow: hidden;
 }
-
+.aVinculo{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+}
 .navItem{
-    width: 100%;;
+    width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -120,13 +133,20 @@ main{
 }
 
 #secProductos{
-    /*border: 1px solid black;*/
+    /*border: 1px solid black;
     position: relative;
+    width: 80%;*/
     margin-top: 5px;
-    width: 80%;    
+    margin-left: 10%;
+    padding-right: 55px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    gap: 1rem;
+    
 }
 .tituloSeccion{
-    /*border: 1px solid black;*/
+    grid-column: 1/3;
     width: 100%;
     text-align: start;
     font-size: 2rem;
@@ -138,7 +158,7 @@ main{
     display: flex;
     margin:  1rem 0 1rem 0;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 1rem;
 }
@@ -178,7 +198,7 @@ main{
 
 .nombreProducto{
     /*border: 1px solid black;*/
-    width: 95%;
+    width: 90%;
     height: 2.5rem;
     padding: 0.5rem 0rem 0rem 0.5rem;
     font-size: 1rem;
@@ -187,6 +207,79 @@ main{
     color: white;
 }
 
+.carritoCompras{
+    /*border: 1px solid black;
+    width: 100%;
+    height: 100%;
+    background-color: white;*/
+    margin: 0%;
+}
+
+.tituloCarrito{
+    /*border: 1px solid black;*/
+    width: 400px;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0px;
+    padding: 0.5rem;
+}
+
+.stockProducto{
+        display: block;
+        font-weight: normal;
+        font-size: 0.8rem;
+        color: grey;
+    }
+
+.btnAgregar{
+    /*border: 1px solid black;*/
+    width: 100%;
+    /*height: 2rem;*/
+    background-color: rgba(0, 255, 255, 0.5);
+    border-radius: 0 0 1rem 1rem;
+    color: rgb(0, 0, 255);
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnCantidad{
+    width: 90px;
+    height: 30px;
+    background-color: rgba(255, 255, 255,0);
+    border-radius: 5px;
+    color: rgb(0, 0, 255);
+    font-size: 0.9rem;
+
+}
+
+.btnEliminar{
+    /*border: 1px solid black;*/
+    width: 90px;
+    height: 30px;
+    background-color: rgba(255, 0, 0);
+    border-radius: 5px;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.btnFinalizarCompra{
+    width: 100%;
+    max-width: 360px;
+    height: 2rem;
+    background-color: rgb(8, 199, 2);
+    border-radius: 10px;
+    color: rgb(145, 255, 0);
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}   
 .secContacto{
     /*border: 1px solid black;*/
     background-image: url(Imagenes/fondo-2.avif);
@@ -456,11 +549,51 @@ footer p{
     margin: 0px;
     padding: 0px;
 }
+
+@media only screen and (max-width: 900px) {
+   #secProductos{
+        width: 1fr;
+        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        
+        /*margin-left: 0px;*/
+    }
+    .tituloSeccion{
+        /*border: 1px solid black;*/
+        width: 80%;
+        margin: 0 0 0 15%;
+    }
+    .areaProductos{
+        width: 1fr;      
+        margin-left: 15%;        
+        padding: 0;
+        /*padding-left: 10%;
+        padding-right: 55px;*/
+    }
+
+    .carritoCompras{
+        width: 90%;
+        margin: 0px;
+        margin-left: 15%;
+        margin-bottom: 10px;
+    }
+    .tituloCarrito{
+        width: 1fr;
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 0px;
+    }
+}
+
 @media only screen and (max-width: 600px) {
+    
     header{
         padding: 0px;
         margin: 0px;
     }
+ 
     /*.logo{
         width: 20%;
         margin: 0px;
@@ -468,14 +601,16 @@ footer p{
     header h2{
         font-size: 1.8rem;
     }
-    nav{
+    .navHeader{
         width: 100%;
-        justify-content: end;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
         margin: 0px;
         padding: 0px;
     }
     #formContacto{
-        width: 100%;
+        width: 400px;
         margin: 0px;
     }
     .cardResenia{

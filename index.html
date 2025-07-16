@@ -19,7 +19,7 @@
     <header>
         <img src="Imagenes/logo.png" alt="Logo de la página" class="logo"></i>
         <h2>[ B B H ] Better buy here !</h2>
-        <nav>
+        <nav class="navHeader">
             <ul>
                 <li>
                     <i class="fa-solid fa-house fa-xl"></i>
@@ -47,9 +47,9 @@
                     <a href="https://maps.app.goo.gl/eFNKRpr8c69nfNgt9" target="_blank">Visitanos</a>
                 </li>
                 <li>
-                    <i class="fa-solid fa-circle-user fa-2xl"></i>
+                    <i class="fa-solid fa-circle-user fa-2xl" onclick="alert('Disponible próximamente!')"></i>
                     <!--<img src="Iconos/usuario.png" class="iconoMediano"></i>-->
-                    <a href="#">Iniciar sesión</a>
+                    <a href="#"onclick="alert('Disponible próximamente!')">Iniciar sesión</a>
                 </li>
             </ul>      
         </nav>
@@ -57,57 +57,11 @@
     
     
     <main>
-        
-        
+                
         <section id="secProductos">
             <h2 class="tituloSeccion">Productos</h2>
-            <div class="areaProductos">
-                <div class ="cardProducto">
-                    <img src="Imagenes/carpeta.jpg" alt="Imagen de producto 1" class="imgProducto">
-                    <p class="precioProducto">$1.500,00</p>
-                    <h3 class="nombreProducto">Carpeta A4</h3>
-                </div>
-                <div class ="cardProducto">
-                    <img src="Imagenes/fibras.jpg" alt="Imagen de producto 1" class="imgProducto">
-                    <p class="precioProducto">$1.500,00</p>
-                    <h3 class="nombreProducto">Fibras de colores</h3>
-                </div>
-                <div class ="cardProducto">
-                    <img src="Imagenes/goma.jpg" alt="Imagen de producto 1" class="imgProducto">
-                    <p class="precioProducto">$1.500,00</p>
-                    <h3 class="nombreProducto">Goma</h3>
-                </div>
-                <div class ="cardProducto">
-                    <img src="Imagenes/hojas.jpg" alt="Imagen de producto 1" class="imgProducto">
-                    <p class="precioProducto">$1.500,00</p>
-                    <h3 class="nombreProducto">Hoja A4</h3>
-                </div>
-                <div class ="cardProducto">
-                    <img src="Imagenes/lapiceras.jpg" alt="Imagen de producto 1" class="imgProducto">
-                    <p class="precioProducto">$1.500,00</p>
-                    <h3 class="nombreProducto">Lapicera azul</h3>
-                </div>
-                <div class ="cardProducto">
-                    <img src="Imagenes/lapiceras_colores.jpg" alt="Imagen de producto 1" class="imgProducto">
-                    <p class="precioProducto">$1.500,00</p>
-                    <h3 class="nombreProducto">Lapicera color</h3>
-                </div>
-                <div class ="cardProducto">
-                    <img src="Imagenes/libretas.jpg" alt="Imagen de producto 1" class="imgProducto">
-                    <p class="precioProducto">$1.500,00</p>
-                    <h3 class="nombreProducto">Libreta</h3>
-                </div>
-                <div class ="cardProducto">
-                    <img src="Imagenes/marcadores.jpg" alt="Imagen de producto 1" class="imgProducto">
-                    <p class="precioProducto">$1.500,00</p>
-                    <h3 class="nombreProducto">Marcador</h3>
-                </div>
-                <div class ="cardProducto">
-                    <img src="Imagenes/papeles_colores.jpg" alt="Imagen de producto 1" class="imgProducto">
-                    <p class="precioProducto">$1.500,00</p>
-                    <h3 class="nombreProducto">Papel de color</h3>
-                </div>
-            </div>
+            <div class="areaProductos"></div>            
+            <div class="carritoCompras"></div>
         </section>
         
         <section class="secContacto">
@@ -362,7 +316,7 @@
             </div>
         </section>
 
-        <section class="espacioPublicitario">
+        <section id="espPubl" class="espacioPublicitario">
             <h3>- PUBLICITE AQUÍ -</h3>
             <video controls autoplay muted loop class="videoPublicidad">
                 <source src="videos/publicidad.mp4" type="video/mp4"href="https://www.youtube.com/shorts/lJfYlcoXkM8">
@@ -371,20 +325,32 @@
             <h3>- PUBLICITE AQUÍ -</h3>
         </section>
 
-        <nav class="navigationBar">
+        <nav class="navFlotante">
             <ul id="navBar">
                 <li class="navItem">
-                    <i class="fa-solid fa-house fa-xl" style="color: #ffffff;"></i>
-                    <a href="#puntoInicio">Ini</a></i>
+                    <a class="aVinculo" href="#puntoInicio">
+                        <i class="fa-solid fa-house fa-xl" style="color: #ffffff;"></i>
+                    </a>
                 </li>
                 <li class="navItem">
-                    <i class="fa-solid fa-box fa-xl" style="color: #ffffff;"></i>
+                    <a class="aVinculo" href="#secProductos">
+                        <i class="fa-solid fa-box fa-xl" style="color: #ffffff;"></i>
+                    </a>                    
                 </li>
                 <li class="navItem">
-                    <i class="fa-solid fa-envelope fa-xl" style="color: #ffffff"></i>
+                    <a class="aVinculo" href="#puntoCarrito">
+                        <i class="fa-solid fa-cart-shopping fa-xl"style="color: #ffffff;"></i>
+                    </a>                    
                 </li>
                 <li class="navItem">
-                    <i class="fa-solid fa-comments-dollar fa-xl" style="color:#ffffff"></i>
+                    <a class="aVinculo" href="#formContacto">
+                        <i class="fa-solid fa-envelope fa-xl" style="color: #ffffff"></i>
+                    </a>
+                </li>
+                <li class="navItem">
+                    <a class="aVinculo" href="#espPubl">
+                        <i class="fa-solid fa-comments-dollar fa-xl" style="color:#ffffff"></i>
+                    </a>
                 </li>
             </ul>
         <nav>
@@ -416,5 +382,6 @@
         </div>
         <p>© 2025 Todos los derechos reservados.</p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
